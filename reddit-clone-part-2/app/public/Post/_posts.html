@@ -25,8 +25,8 @@
         <h4 class="media-heading">
           {{post.title}}
           |
-          <a ng-click="post.count = post.count + 1"><i class="glyphicon glyphicon-arrow-up"></i></a>
-          <a ng-click="post.count = post.count - 1" ng-if="post.count > 0"><i class="glyphicon glyphicon-arrow-down"></i></a>
+          <a ng-click="$ctrl.addVote(post.id)"><i class="glyphicon glyphicon-arrow-up"></i></a>
+          <a ng-click=$ctrl.deleteVote(post.id) ng-if="post.vote_count > 0"><i class="glyphicon glyphicon-arrow-down"></i></a>
           {{post.vote_count}}
         </h4>
         <div class="text-right">
