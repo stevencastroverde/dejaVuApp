@@ -12,7 +12,6 @@ function postController (databaseService) {
   vm.$onInit = function () {
     databaseService.getAll()
       .then((response) =>  {
-        console.log(response);
         vm.posts = response.data})
   }
   vm.addComment = function(p) {

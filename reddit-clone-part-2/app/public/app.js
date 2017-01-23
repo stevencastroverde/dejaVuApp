@@ -1,2 +1,2 @@
 
-angular.module('app', ['ngMessages','angularMoment'])
+angular.module('app', ['ngMessages','angularMoment','ui.router'])

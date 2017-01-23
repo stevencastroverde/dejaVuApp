@@ -1,0 +1,47 @@
+
+
+
+
+        <form class="col-sm-12" name="editForm" novalidate ng-submit="$ctrl.changePost()">
+            <div>
+                <label>Title<input class="form-control" type="text" name="title" ng-model="$ctrl.editPost.title" ng-minLength="5" ng-maxLength="30" required/></label>
+                <div ng-messages="editForm.title.$error" ng-show="editForm.title.$dirty" style="color:maroon" role="alert">
+                    <div ng-message="required">You did not enter a field</div>
+                    <div ng-message="minlength">Your Title is too short</div>
+                    <div ng-message="maxlength">Your Title is too long</div>
+                </div>
+            </div>
+            <div>
+
+                <label>Body<textarea class="form-control" type="text" name="body" ng-model="$ctrl.editPost.body" required ng-minLength="10" ng-maxLength="500"></textarea></label>
+                <div ng-messages="editForm.body.$error" ng-show="editForm.body.$dirty" style="color:maroon" role="alert">
+                    <div ng-message="required">You did not enter a field</div>
+                    <div ng-message="minlength">Your Body is too short</div>
+                    <div ng-message="maxlength">Your Body is too long</div>
+                </div>
+            </div>
+            <div>
+
+                <label>Author<input class="form-control" type="text" name="author" ng-model="$ctrl.editPost.author" ng-minLength="3" ng-maxLength="50" required/></label>
+                <div ng-messages="editForm.author.$error" ng-show="editForm.author.$dirty" style="color:maroon" role="alert">
+                <div ng-message="required">You did not enter a field</div>
+                    <div ng-message="minlength">Author name is too Short</div>
+                    <div ng-message="maxlength">Author Name is too long</div>
+                </div>
+            </div>
+            <div>
+                <label>Image URL<input class="form-control" type="url" name='image_url' ng-model="$ctrl.editPost.image_url"/ required></label>
+                <div ng-messages="editForm.image_url.$error" ng-show="editForm.image_url.$dirty" style="color:maroon" role="alert">
+                    <div ng-message="required">You did not enter a field</div>
+                    <div ng-message="url">You need to enter a URL</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button ng-disabled="editForm.$invalid" type="submit" class="btn btn-primary">
+          Edit Post
+        </button>
+      </div>
+        </form>
+
+
+</section>

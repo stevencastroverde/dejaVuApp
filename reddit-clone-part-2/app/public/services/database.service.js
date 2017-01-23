@@ -13,6 +13,9 @@ angular.module('app')
         getPostById: function (postId) {
          return  $http.get(`${apiUrl}/${postId}`)
         },
+        patchPost: function (post) {
+          return $http.patch(`${apiUrl}/${post.id}`, post)
+        },
         createComment: function (postId, commentBody){
          return $http.post(`${apiUrl}/${postId}/comments`, commentBody )
         },
