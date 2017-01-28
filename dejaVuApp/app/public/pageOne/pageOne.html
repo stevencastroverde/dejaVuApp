@@ -1,0 +1,25 @@
+<section>
+
+  <!-- <div id="wrapper"> -->
+              <div class="col s12 m9">
+
+                  <div class="card horizontal" id="card">
+                      <div class="card-image">
+                          <img class="pageTwoimg" ng-src="{{$ctrl.dream.image_url}}">
+                      </div>
+
+                      <div class="card-stacked">
+                          <div class="card-content">
+                              <p>{{$ctrl.dream.interpretation}}</p>
+                          </div>
+                          <div class="input-field col s3" id="bigButton">
+                              <button ui-sref="pageTwo({term:$ctrl.dream.term})"><b>Let's Go Deeper<b></button>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          <!-- </div> -->
+
+
+</section>

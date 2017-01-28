@@ -1,0 +1,94 @@
+body {
+   font-family: 'Shadows Into Light', cursive;
+   /*background-color: #090C02 ;*/
+   width: 90vw !important;
+};
+
+#logo {
+   font-size: 8em !important;
+   color: #BC2A09 !important ;
+   margin-top: 1em;
+   align-self: center;
+}
+
+.head {
+   display: flex;
+   justify-content: center;
+}
+
+#logo2 {
+   font-size: 7em !important;
+   color: #BC2A09 ;
+   margin: 0em;
+}
+
+label {
+   width: 12em !important;
+   font-size: 2.5em !important;
+}
+
+button {
+   width: 8em !important;
+   height: 2em !important;
+   font-size: 2em !important;
+   margin-top: 1em !important;
+   border-top-left-radius: 12em !important;
+   border-top-right-radius: 12em !important;
+   border-bottom-right-radius: 12em !important;
+   border-bottom-left-radius: 12em !important;
+   background-color: #BC2A09 !important;
+   color: white !important;
+}
+
+#bigButton {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#button3 {
+   background-color: #090C02 !important;
+   width: 10em !important;
+}
+
+.card {
+   height: 35em !important;
+   width: 89vw !important;
+}
+
+img {
+   height: 35em !important;
+   width: 40em !important;
+}
+
+.card-stacked {
+   height: 10em !important;
+   width: 20em !important;
+}
+
+#wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: -1em !important;
+   background-color: #C5C3C6 ;
+   height: 37.5em !important;
+   width: 92vw !important;
+}
+
+#wrapper3 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: -1em !important;
+   background-color: #129490 !important;
+   height: 37.5em !important;
+   width: 92vw !important;
+}
+
+p {
+   font-size: 2em !important;
+}
+#search {
+  font-size: 3em;
+}
